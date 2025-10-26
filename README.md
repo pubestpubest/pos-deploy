@@ -4,6 +4,12 @@
 
 ---
 
+## 👥 Team Members(CPE CMU_261497 SEC003)
+
+- **Phanudet Sueaphueak 650610797** - Frontend Developer
+- **Pubest Ruengkum 650610798** - Backend Developer
+- **Korarit Punnopasri 650610744** - Frontend Developer
+
 ## 🧱 Architecture
 
 ```
@@ -42,6 +48,27 @@ All services share an internal bridge network `pos-network`. Health checks ensur
 **Volumes**: `postgres_data`, `minio_data` keep your data persistent across restarts.
 
 ---
+
+## 📦 Source Repositories
+
+The Docker images used in this deployment are built from the following repositories:
+
+### 🧠 Backend (Go Clean Architecture)
+
+- **Repository:** [pubestpubest/pos-backend](https://github.com/pubestpubest/pos-backend)
+- **Image Used:** `pubest/pos-backend:1.0.0`
+- **Description:**  
+  Implements a RESTful API using Go + Gin with Clean Architecture principles.  
+  Features include PostgreSQL integration (via GORM), MinIO storage, Logrus logging,  
+  and automatic database migrations on startup.
+
+### 💻 Frontend (Next.js POS Interface)
+
+- **Repository:** [Goodl3oyZ/POS_FRONTEND](https://github.com/Goodl3oyZ/POS_FRONTEND)
+- **Image Used:** `pubest/pos-frontend:1.0.0`
+- **Description:**  
+  Next.js + Tailwind-based restaurant POS interface featuring table and order management,  
+  authentication, analytics, and responsive design for tablets and kiosks.
 
 ## ✅ Prerequisites
 
